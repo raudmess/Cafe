@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(213,46,160,0.7),
+    rgba(147, 152, 248, 0.7))
+    , url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    background: red;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 1.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.cool-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+}
+
+.cool-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+/* ----- Responsive Design ------- */
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: fixed;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+    /*-----offer-----*/
+.offer{
+        width: 80%;
+        margin:auto;
+        text-align: center;
+        padding-top: 50px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+
+P{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 20px;}
+
+.row{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu{
+   flex-basis: 31%;
+   background-color: rgb(238, 204, 230);
+   border-radius: 10px;
+   margin-bottom: 5%;
+   padding: 20px 12px;
+   box-sizing: border-box;
+}
+
+.images{
+text-align: center;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+.img{
+   flex-basis: 32%;
+   border-radius: 10px; 
+   position: relative;
+   overflow:hidden;
+   margin:auto;
+}
+
+.img img{
+    width: 75%;
+    border-radius: 10px;
+}
+
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 1s;
+}
+
+.layer:hover{
+    background-color: rgba(226,0,0,0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0  ;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom:49%;
+    opacity:1;
+}
+
+.customers{
+width:80%;
+margin:auto;
+padding-top:50px;
+text-align:center;
+font-size:30px;
+}
+
+.customers-col{
+    background-color: rgb(238, 204, 230);
+    flex-basis:44%;
+    border-radius:10px; 
+    padding:25px;
+    margin-bottom:50px;
+    text-align:left;
+    cursor: pointer;
+    display: flex;
+ } 
+
+.customers-col img{
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius:50%;
+}
+
+.customers-col .fa{
+    color: orange;
+}
+
+.contact{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(213,46,160,0.7),
+    rgba(147, 152, 248, 0.7))
+    , url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 40px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+}
+
+.cool-btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 30px;
+    position: relative;
+}
+
+.contact-us{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.contact-us h1{
+    font-size: 62px;
+    margin-bottom: 50px;
+}
+
+.contact-us p{
+    margin: 10px 0 40px;
+    font-size:50px;
+    color: white;
+}
+
+.about-us{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    
+}
+
+.about-us h1{
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
